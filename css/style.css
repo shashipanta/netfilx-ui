@@ -45,6 +45,10 @@ input{
 a:hover{
     text-decoration: underline;
 }
+/* remove hover effects on icons related with buttons */
+a > spans:hover {
+    text-decoration: clear;
+}
 
 /* Some default stylings */
 body{
