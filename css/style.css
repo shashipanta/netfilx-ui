@@ -45,9 +45,10 @@ input{
 a:hover{
     text-decoration: underline;
 }
+
 /* remove hover effects on icons related with buttons */
-a > spans:hover {
-    text-decoration: clear;
+a:hover a > span{
+    text-decoration: none;
 }
 
 /* Some default stylings */
@@ -89,6 +90,12 @@ body{
 .btn-primary{
     background-color: var(--clr-primary);
     padding: .8em 1em;
+}
+
+.btn-primary:hover {
+    text-decoration: none;
+    background-color: var(--clr-primary);
+    opacity: 0.8;
 }
 
 /* Main Info section */
