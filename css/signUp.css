@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+    --clr-primary: #e50914;
+    --clr-grey: #8c8c8c;
+    --clr-font-default: #fff;
+    --clr-acordion-bg: #303030;
+    --ff-main: Helvetica;
+    --padding-default: 1em 2em 2em 2em;
+    --bg-black-netflix: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./background.jpg);
+    --clr-dark-grey: #333;
+    --clr-blue-link: #0071EB;
+    --clr-input-msg: #e87c03;
+}
+.logo{
+    margin-left: 3em;
+}
+
+/* hidden message in the input fields */
+.invalid-input{
+    border-bottom: solid 4px var(--clr-input-msg);
+    background: var(--clr-dark-grey);
+}
+
+/* .email-input{ */
+/*     border-bottom: solid 4px var(--clr-input-msg); */
+/*     background-color: var(--clr-dark-grey); */
+/* } */
+
+.field-msg {
+    color: var(--clr-input-msg);
+    display: block;
+    flex-wrap: wrap;
+    font-size: .8em;
+    margin-top: -2em;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 40%;
+    min-width: 500px;
+    background-color: rgba(0,0,0,.75);
+    margin-inline: auto;
+    margin-bottom: 10em;
+    padding: 3em;
+    font-family: 'Roboto';
+    /* opacity: 0.8; */
+    border-radius: 0.4em;
+}
+
+.email-container {
+}
+
+.field-helper-container {
+    color: var(--clr-grey);
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-family: Arial;
+}
+
+.field-helper-container > a {
+    margin-left: 43%;
+    color: var(--clr-grey);
+}
+
+span {
+    color: var(--clr-grey);
+}
+
+span > a {
+    margin-left: .8em;
+}
+
+.extra-info{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.captcha-msg{
+    font-size: .8em;
+}
+
+.blue-link {
+    color: var(--clr-blue-link);
+}
+
+.blue-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* make buttons more like buttons */
+.sign-up-container .email-input,
+.btn-primary{
+    border-radius: 0.3em;
+}
+
+/* horizontal seperator */
+.horizontal-sep__light{
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--clr-grey);
+}
+
+footer {
+    background-color: rgba(0,0,0, .75);
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 2em;
+    gap: 2em;
+}
+
+@media screen and (max-width: 680px) {
+    .main-container{
+        padding: 0;
+        background: black;
+    }
+    .sign-up-container {
+        width: 100%;
+    }
+    .field-helper-container > a {
+        margin-left: 57%;
+    }
+}

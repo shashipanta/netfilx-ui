@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/signUp.css" />
+    <title>Netflix</title>
+
+</head>
+<body>
+    <div class="main-container">
+
+    <nav class="nav-container">
+        <a href="./index.html">
+            <div class="logo">
+                <img class="nav-logo" src="./img/Netflix-logo-transparent.png" />
+            </div>
+        </a>
+    </nav>
+
+    <div class="sign-up-container">
+        <h1>Sign In</h1>
+        <!-- Email container -->
+        <div class="email-container">
+            <input type="email" class="email-input" id="user-email"/>
+            <label for="email" class="placeholder" id="email-placeholder">Email or phone number</label>
+        </div>
+        <label for="email" class="field-msg hidden" id="user-email-msg">Please enter a valid email or phone number</label>
+
+        <div class="email-container">
+            <input type="email" class="email-input" id="user-pwd"/>
+            <label for="email" class="placeholder" id="pwd-placeholder">Password</label>
+        </div>
+        <label for="email" class="field-msg hidden" id="user-pwd-msg">Your password must contain between 4 and 60 characters</label>
+
+        <a class="btn-primary flex" href="#">Sign In</a>
+
+        <div class="field-helper-container">
+            <input type="checkbox" id="remember-me" value="remember-me" checked>
+            <label for="remember-me">Remember me?</label>
+            <a href="#">Need help?</a>
+        </div>
+
+        <div class="extra-info">
+            <span>New to Netflix?<a href="#">Sign up now</a></span>
+            <span class="captcha-msg">
+                This page is protected by Google reCAPTCHA to ensure that you're not a bot.
+                <span class="blue-link">Learn more</span>
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Horizontal seperator -->
+    <div class="horizontal-sep__light"></div>
+
+    <footer>
+        <div class="footer-container">
+
+            <a href="#" class="footer__header">Questions? Contact us.</a>
+
+            <div class="flex-container">
+                <div class="footer__menu__right">
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy</a>
+                </div>
+
+                <div class="footer__menu__center">
+                    <a href="#">Help Center</a>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+
+                <div class="footer__menu__right">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Corporate Information</a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="footer__header">Netflix Nepal</a> -->
+    </footer>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="signUp.js"></script>
+</body>
+</html>

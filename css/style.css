@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --clr-primary: #e50914;
+    --clr-grey: #8c8c8c;
+    --clr-font-default: #fff;
+    --clr-acordion-bg: #303030;
+    --ff-main: Helvetica;
+    --padding-default: 1em 2em 2em 2em;
+    --bg-black-netflix: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./../img/background.jpg);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+button{
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    /* letter-spacing: 2px; */
+    word-spacing: 2px;
+    cursor: pointer;
+}
+
+input{
+    outline: none;
+    border: none;
+    padding: 0 .8em;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Some default stylings */
+body{
+    color: var(--clr-font-default);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.main-container{
+    /* filter: brightness(50%); */
+    /* background-image: url(./background.jpg); */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background: var(--bg-black-netflix);
+    /* width: 100vw; */
+    height: 100%;
+    min-height: 50em;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: var(--padding-default);
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: .4em 1em; */
+}
+
+.nav-container .logo{
+    /* color: var(--clr-primary); */
+    /* font-size: 1.5em; */
+    width: 8em;
+    height: 5em;
+}
+
+.btn-primary{
+    background-color: var(--clr-primary);
+    padding: .8em 1em;
+}
+
+/* Main Info section */
+.main-info{
+    font-size: 1.4em;
+    text-align: center;
+    /* width: 80%; */
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 6rem;
+    margin-inline: auto;
+    color: white;
+}
+
+/* email container */
+.email-container{
+    display: flex;
+    width: 100%;
+    min-height: 3em;
+    position: relative;
+}
+
+.email-container input{
+    width: 100%;
+    font-size: 1rem;
+    padding: .1em 1em;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.email-container a{
+    font-size: 1rem;
+    flex: 1 1 12em;
+}
+
+/* place holder for email address */
+.placeholder{
+    position: absolute;
+    font-size: .8em;
+    color: var(--clr-grey);
+    top: 1.4em;
+    left: 18px;
+}
+
+.email-input:focus + .placeholder{
+    font-size: .8em;
+    transform: translateY(-12px);
+    /* color: white; */
+}
+.email-input:focus {
+    padding: 1.8em 1.125em 0.5em;
+}
+
+/* Horizontal seperator for .... */
+.horizontal-sep{
+    width: 100%;
+    height: .5em;
+    background-color: var(--clr-grey);
+}
+
+.section-container{
+    margin: 0 4em;
+}
+
+.outer-wrapper{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    /* padding: var(--padding-default); */
+    margin: 4rem auto;
+}
+.wrapper__content,
+.animated-content{
+    font-size: 1.5rem;
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* For the animated tv section */
+.animated-tv{
+    position: relative;
+}
+
+/* video for animated tv */
+.our-story-card-animation{
+    position: absolute;
+    top: 5.9em;
+    left: 4.8em;
+    z-index: -1;
+    width: 72.3%;
+}
+
+.our-story-card-video{
+    width: 100%;
+}
+
+.freq-ques{
+    margin: 3em 0 .8em 0 ;
+    text-align: center;
+}
+/* acordion menu */
+.acordion-container{
+    display: flex;
+    width: 90%;
+    max-width: 55rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:.2em;
+    margin: .1em auto;
+}
+
+.acordion__header{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 100;
+    width: 100%;
+    max-height: 4em;
+    background-color: var(--clr-acordion-bg);
+    justify-content: space-between;
+    padding: 1.3em 1.5em;
+    cursor: pointer;
+}
+
+.acordion__header h2{
+    font-weight: lighter !important;
+}
+
+
+.acordion__body{
+    background-color: var(--clr-acordion-bg);
+    margin-top: 1px;
+    padding: .8em 1em;
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    display: none;
+    transition:transform ease-out 4s;
+    /* transition: width 2s, height 2s, background-color 2s, transform 2s; */
+}
+
+/* close button for acordion */
+.close-btn{
+    font-weight: 100;
+    transform: rotate(45deg);
+    transition: ease-in 2ms;
+}
+
+.txt-center{
+    margin: 3em 0;
+    text-align: center;
+}
+
+.mail-container{
+    display: flex;
+    width: 100%;
+    max-width: 40rem;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+    /* margin-top:-30em; */
+    position: relative;
+}
+
+/* footer menu */
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 5rem 10rem 2rem;
+}
+
+.flex-container{
+    display: flex;
+    font-size: .8em;
+    gap: 3em;
+    /* justify-content: space-between; */
+}
+
+.footer__header{
+    min-width: 200px;
+}
+
+.footer__header,
+footer a{
+    color: var(--clr-grey);
+}
+
+.footer__menu__right,
+.footer__menu__center,
+.footer__menu__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
+
+    min-width: 250px;
+}
+
+
+/* Email container near footer */
+.mail-container > input{
+    flex: 1 1 ;
+}
+
+.mail-container .placeholder{
+    top: 10;
+    left: 1.5em;
+}
+
+/* Media queries for responive design */
+@media screen and (max-width: 680px) {
+  .outer-wrapper {
+      flex-direction: column;
+  }
+
+  .wrapper__content,
+  .animated-content{
+      width: 100%;
+      text-align: center;
+      /* margin-bottom: -1em; */
+  }
+
+  .our-story-card-animation{
+    top: 4.8em;
+    left: 4.1rem;
+    width: 73%;
+  }
+
+  footer{
+      max-width: 100px;
+      padding: 5rem 6rem 2rem;
+  }
+  .footer__menu__right,
+  .footer__menu__center,
+  .footer__menu__left{
+      min-width: 150px;
+  }
+
+}
