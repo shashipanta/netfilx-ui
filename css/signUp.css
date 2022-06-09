@@ -7,7 +7,7 @@
     --clr-acordion-bg: #303030;
     --ff-main: Helvetica;
     --padding-default: 1em 2em 2em 2em;
-    --bg-black-netflix: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/background.jpg);
+    --bg-black-netflix: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./../img/background.jpg);
     --clr-dark-grey: #333;
     --clr-blue-link: #0071EB;
     --clr-input-msg: #e87c03;
